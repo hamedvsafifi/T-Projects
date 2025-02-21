@@ -18,7 +18,7 @@ button {
   all: unset;
   width: 50px;
   height: 30px;
-  background-color: rgb(140 0 153);
+  background-color: rgb(181, 39, 0);
   border-radius: 30%;
   margin-top: 7px;
 }
@@ -27,8 +27,56 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  justify-items: center;
+  align-items: center;
 }
 
 .counters h1 {
   margin: 0px 10px 0px 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+.infiled {
+  width: 50%;
+  height: 25px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.8;
+  margin: 10px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  font-size: large;
+}
+
+.infiled:hover {
+  opacity: 1;
 }
